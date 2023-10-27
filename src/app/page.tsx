@@ -5,7 +5,18 @@ import Nav from "./my-components/Nav";
 import ProjectCard from "./my-components/ProjectCard";
 import { useEffect, useState } from "react";
 import Article from "./my-components/Article";
-
+/**
+ * key={article.url}
+  title={article.title}
+  date={article.readable_publish_date}
+  href={article.url}
+ */
+interface IArticle {
+  url: string;
+  title: string;
+  date: string;
+  readable_publish_date: string;
+}
 const tabTitles = [
   { value: "projects", title: "Projects" },
   { value: "articles", title: "Articles" },
@@ -84,7 +95,7 @@ export default function Home() {
             </TabsContent>
             <TabsContent value="articles" className="flex flex-col gap-y-4">
               {articles.length > 1 &&
-                articles.map((article) => (
+                articles.map((article: IArticle) => (
                   <Article
                     key={article.url}
                     title={article.title}
