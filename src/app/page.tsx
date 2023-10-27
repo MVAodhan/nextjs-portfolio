@@ -68,7 +68,7 @@ export default function Home() {
               </TabsTrigger>
             ))}
           </TabsList>
-          <div className="flex flex-col w-full h-[400px] overflow-y-scroll scrollbar">
+          <div className="pt-4 flex flex-col w-full h-[400px] overflow-y-scroll scrollbar">
             <TabsContent value="projects" className="flex flex-col gap-y-4 ">
               <ProjectCard
                 hrefLink={"https://schedulewithjason.netlify.app"}
