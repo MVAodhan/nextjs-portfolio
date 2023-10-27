@@ -59,7 +59,7 @@ export default function Home() {
         </p>
         <Tabs
           defaultValue={tabTitles[0].value}
-          className="w-4/6 flex flex-col mt-10 mb-2"
+          className="w-4/6 flex flex-col mt-10"
         >
           <TabsList>
             {tabTitles.map((tab) => (
@@ -68,8 +68,8 @@ export default function Home() {
               </TabsTrigger>
             ))}
           </TabsList>
-          <div className="flex flex-col w-full h-[400px] gap-y-2 overflow-y-scroll scrollbar">
-            <TabsContent value="projects" className="flex flex-col gap-y-4">
+          <div className="flex flex-col w-full h-[400px] overflow-y-scroll scrollbar">
+            <TabsContent value="projects" className="flex flex-col gap-y-4 ">
               <ProjectCard
                 hrefLink={"https://schedulewithjason.netlify.app"}
                 title={"Schedule with Jason"}
