@@ -12,7 +12,7 @@ const ProjectCard = ({
   repoLink: string;
 }) => {
   return (
-    <div className="rounded-lg p-2 w-full h-26 flex flex-col gap-2 bg-slate-100 dark:bg-slate-800">
+    <div className="rounded-lg p-4 w-full  flex flex-col gap-2 bg-slate-100 dark:bg-slate-800">
       <Link
         href={hrefLink}
         target="_blank"
