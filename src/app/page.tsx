@@ -55,7 +55,7 @@ export default function Home() {
           Aodhan Hamilton
         </h1>
         <p className="flex flex-col items-center m-2">
-          Fullstack Web Developer
+          Fullstack Web Developer from New Zealand
         </p>
         <Tabs
           defaultValue={tabTitles[0].value}
