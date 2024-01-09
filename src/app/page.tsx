@@ -22,21 +22,13 @@ const tabTitles = [
   { value: "articles", title: "Articles" },
 ];
 
-const navLinks = [
-  { href: "/", title: "Home" },
-  { href: "/get-involved", title: "Get Involved" },
-  { href: "/policy", title: "Policy" },
-  { href: "/library", title: "Library" },
-  { href: "/events", title: "Events" },
-];
-
 export default function Home() {
   const [articles, setArticles] = useState([]);
 
   async function getArticles() {
-    const res = await fetch(
-      "https://dev.to/api/articles?username=suiteasdesign"
-    );
+    const res = await fetch("https://dev.to/api/articles?username=mvaodhan", {
+      cache: "no-store",
+    });
 
     const data = await res.json();
 
